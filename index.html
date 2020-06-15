@@ -17,13 +17,14 @@
     <nav class="ui inverted attached segment m-padded-tb-mini">
         <!--container容器，会自动根据屏幕打到最好的效果-->
         <div class="ui container">
-            <div class="ui inverted secondary menu">
+            <!--stackable 可堆叠的，比如说导航栏，这里可以适应手机端-->
+            <div class="ui inverted secondary menu stackable">
                 <h2 class="ui teal header item">Blog</h2>
-                <a href="#" class="item"><i class="home icon"></i>首页</a>
-                <a href="#" class="item"><i class="idea icon"></i>分类</a>
-                <a href="#" class="item"><i class="tags icon"></i>标签</a>
-                <a href="#" class="item"><i class="info icon"></i>关于我</a>
-                <div class="right item">
+                <a href="#" class="item mobile-item m-mobile-hide"><i class="home icon"></i>首页</a>
+                <a href="#" class="item mobile-item m-mobile-hide"><i class="idea icon"></i>分类</a>
+                <a href="#" class="item mobile-item m-mobile-hide"><i class="tags icon"></i>标签</a>
+                <a href="#" class="item mobile-item m-mobile-hide"><i class="info icon"></i>关于我</a>
+                <div class="right item mobile-item m-mobile-hide">
                     <!--transparent透明-->
                     <div class="ui inverted transparent icon input">
                         <input type="text" placeholder="搜索...">
@@ -32,12 +33,15 @@
                 </div>
             </div>
         </div>
+        <a href="#" id="mobile-nav-button" class="ui menu toggle button black m-mobile-show m-right-top">
+            <i class="icon sidebar"></i>
+        </a>
     </nav>
 
     <!--中间内容-->
     <div class="m-padded-tb-max">
         <div class="ui container">
-            <div class="ui grid">
+            <div class="ui grid stackable">
                 <!--加wide就是竖着写-->
                 <div class="eleven wide column">
                     <!--segment边框-->
@@ -56,7 +60,8 @@
                     <!--content-->
                     <div class="ui attached segment">
                         <div class="ui m-padded-tb-large m-container">
-                            <div class="ui grid">
+                            <!--mobile reversed 手机端，可以和下一个元素互换位置-->
+                            <div class="ui grid mobile reversed stackable">
                                 <div class="eleven wide column">
                                     <h2>Progressive Truthfulness</h2>
                                     <p class="m-text-content">[Progressive truthfulness] is perhaps a better way to build models of physical objects...Start with a model that is fully detailed but only resembles what is wanted. Then, one adjusts one attribute after another, bringing the result ever closer to the mental vision of the new creation...</p>
@@ -88,7 +93,8 @@
                             </div>
                         </div>
                         <div class="ui m-padded-tb-large m-container">
-                            <div class="ui grid">
+                            <!--mobile reversed 手机端，可以和下一个元素互换位置-->
+                            <div class="ui grid mobile reversed stackable">
                                 <div class="eleven wide column">
                                     <h2>Progressive Truthfulness</h2>
                                     <p class="m-text-content">[Progressive truthfulness] is perhaps a better way to build models of physical objects...Start with a model that is fully detailed but only resembles what is wanted. Then, one adjusts one attribute after another, bringing the result ever closer to the mental vision of the new creation...</p>
@@ -120,7 +126,8 @@
                             </div>
                         </div>
                         <div class="ui m-padded-tb-large m-container">
-                            <div class="ui grid">
+                            <!--mobile reversed 手机端，可以和下一个元素互换位置-->
+                            <div class="ui grid mobile reversed stackable">
                                 <div class="eleven wide column">
                                     <h2>Progressive Truthfulness</h2>
                                     <p class="m-text-content">[Progressive truthfulness] is perhaps a better way to build models of physical objects...Start with a model that is fully detailed but only resembles what is wanted. Then, one adjusts one attribute after another, bringing the result ever closer to the mental vision of the new creation...</p>
@@ -152,7 +159,8 @@
                             </div>
                         </div>
                         <div class="ui m-padded-tb-large m-container">
-                            <div class="ui grid">
+                            <!--mobile reversed 手机端，可以和下一个元素互换位置-->
+                            <div class="ui grid mobile reversed stackable">
                                 <div class="eleven wide column">
                                     <h2>Progressive Truthfulness</h2>
                                     <p class="m-text-content">[Progressive truthfulness] is perhaps a better way to build models of physical objects...Start with a model that is fully detailed but only resembles what is wanted. Then, one adjusts one attribute after another, bringing the result ever closer to the mental vision of the new creation...</p>
@@ -184,7 +192,8 @@
                             </div>
                         </div>
                         <div class="ui m-padded-tb-large m-container">
-                            <div class="ui grid">
+                            <!--mobile reversed 手机端，可以和下一个元素互换位置-->
+                            <div class="ui grid mobile reversed stackable">
                                 <div class="eleven wide column">
                                     <h2>Progressive Truthfulness</h2>
                                     <p class="m-text-content">[Progressive truthfulness] is perhaps a better way to build models of physical objects...Start with a model that is fully detailed but only resembles what is wanted. Then, one adjusts one attribute after another, bringing the result ever closer to the mental vision of the new creation...</p>
@@ -216,7 +225,8 @@
                             </div>
                         </div>
                         <div class="ui m-padded-tb-large m-container">
-                            <div class="ui grid">
+                            <!--mobile reversed 手机端，可以和下一个元素互换位置-->
+                            <div class="ui grid mobile reversed stackable">
                                 <div class="eleven wide column">
                                     <h2>Progressive Truthfulness</h2>
                                     <p class="m-text-content">[Progressive truthfulness] is perhaps a better way to build models of physical objects...Start with a model that is fully detailed but only resembles what is wanted. Then, one adjusts one attribute after another, bringing the result ever closer to the mental vision of the new creation...</p>
@@ -248,7 +258,8 @@
                             </div>
                         </div>
                         <div class="ui m-padded-tb-large m-container">
-                            <div class="ui grid">
+                            <!--mobile reversed 手机端，可以和下一个元素互换位置-->
+                            <div class="ui grid mobile reversed stackable">
                                 <div class="eleven wide column">
                                     <h2>Progressive Truthfulness</h2>
                                     <p class="m-text-content">[Progressive truthfulness] is perhaps a better way to build models of physical objects...Start with a model that is fully detailed but only resembles what is wanted. Then, one adjusts one attribute after another, bringing the result ever closer to the mental vision of the new creation...</p>
@@ -280,7 +291,8 @@
                             </div>
                         </div>
                         <div class="ui m-padded-tb-large m-container">
-                            <div class="ui grid">
+                            <!--mobile reversed 手机端，可以和下一个元素互换位置-->
+                            <div class="ui grid mobile reversed stackable">
                                 <div class="eleven wide column">
                                     <h2>Progressive Truthfulness</h2>
                                     <p class="m-text-content">[Progressive truthfulness] is perhaps a better way to build models of physical objects...Start with a model that is fully detailed but only resembles what is wanted. Then, one adjusts one attribute after another, bringing the result ever closer to the mental vision of the new creation...</p>
@@ -312,7 +324,8 @@
                             </div>
                         </div>
                         <div class="ui m-padded-tb-large m-container">
-                            <div class="ui grid">
+                            <!--mobile reversed 手机端，可以和下一个元素互换位置-->
+                            <div class="ui grid mobile reversed stackable">
                                 <div class="eleven wide column">
                                     <h2>Progressive Truthfulness</h2>
                                     <p class="m-text-content">[Progressive truthfulness] is perhaps a better way to build models of physical objects...Start with a model that is fully detailed but only resembles what is wanted. Then, one adjusts one attribute after another, bringing the result ever closer to the mental vision of the new creation...</p>
@@ -344,7 +357,8 @@
                             </div>
                         </div>
                         <div class="ui m-padded-tb-large m-container">
-                            <div class="ui grid">
+                            <!--mobile reversed 手机端，可以和下一个元素互换位置-->
+                            <div class="ui grid mobile reversed stackable">
                                 <div class="eleven wide column">
                                     <h2>Progressive Truthfulness</h2>
                                     <p class="m-text-content">[Progressive truthfulness] is perhaps a better way to build models of physical objects...Start with a model that is fully detailed but only resembles what is wanted. Then, one adjusts one attribute after another, bringing the result ever closer to the mental vision of the new creation...</p>
@@ -376,39 +390,8 @@
                             </div>
                         </div>
                         <div class="ui m-padded-tb-large m-container">
-                            <div class="ui grid">
-                                <div class="eleven wide column">
-                                    <h2>Progressive Truthfulness</h2>
-                                    <p class="m-text-content">[Progressive truthfulness] is perhaps a better way to build models of physical objects...Start with a model that is fully detailed but only resembles what is wanted. Then, one adjusts one attribute after another, bringing the result ever closer to the mental vision of the new creation...</p>
-                                    <div class="ui grid">
-                                        <div class="ui eleven wide column">
-                                            <div class="ui horizontal link list">
-                                                <div class="item">
-                                                    <!--avatar ui image圆弧图片-->
-                                                    <img class="avatar ui image" src="https://timgsa.baidu.com/timg?image&quality=80&size=b99_100&sec=1591898304917&di=e5813532921dc44d2a1cb13a0e7ccb07&imgtype=0&src=http%3A%2F%2Fa3.att.hudong.com%2F35%2F34%2F19300001295750130986345801104.jpg" alt="">
-                                                    <div class="content"><a href="#" class="header">佚名</a></div>
-                                                </div>
-                                                <div class="item">
-                                                    <i class="icon ui calendar"></i> 2020-06-11
-                                                </div>
-                                                <div class="item">
-                                                    <i class="ui icon eye"></i> 20212
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="ui five wide column right aligned">
-                                            <a href="#" class="ui label teal">认知升级</a>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div class="five wide column">
-                                    <img class="ui image rounded" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9900_10000&sec=1591898304917&di=e5813532921dc44d2a1cb13a0e7ccb07&imgtype=0&src=http%3A%2F%2Fa3.att.hudong.com%2F35%2F34%2F19300001295750130986345801104.jpg" alt="">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="ui m-padded-tb-large m-container">
-                            <div class="ui grid">
+                            <!--mobile reversed 手机端，可以和下一个元素互换位置-->
+                            <div class="ui grid mobile reversed stackable">
                                 <div class="eleven wide column">
                                     <h2>Progressive Truthfulness</h2>
                                     <p class="m-text-content">[Progressive truthfulness] is perhaps a better way to build models of physical objects...Start with a model that is fully detailed but only resembles what is wanted. Then, one adjusts one attribute after another, bringing the result ever closer to the mental vision of the new creation...</p>
@@ -453,7 +436,116 @@
                     </div>
                 </div>
                 <div class="ui five wide column">
-                    <div class="ui segment"></div>
+                    <!--分类-->
+                    <div class="ui segments">
+                        <div class="ui secondary segment">
+                            <div class="ui two column grid">
+                                <div class="column">
+                                    <i class="idea icon"></i>分类
+                                </div>
+                                <div class="column right aligned">
+                                    <a href="#">more <i class="icon angle double right icon"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ui teal secondary segment">
+                            <!--fluid vertical 填充整个布局-->
+                            <div class="ui fluid vertical menu">
+                                <a href="#" class="item">
+                                    学习日志
+                                    <div class="ui teal left pointing label">13</div>
+                                </a>
+                            </div>
+                            <div class="ui fluid vertical menu">
+                                <a href="#" class="item">
+                                    学习日志
+                                    <div class="ui teal left pointing label">13</div>
+                                </a>
+                            </div>
+                            <div class="ui fluid vertical menu">
+                                <a href="#" class="item">
+                                    学习日志
+                                    <div class="ui teal left pointing label">13</div>
+                                </a>
+                            </div>
+                            <div class="ui fluid vertical menu">
+                                <a href="#" class="item">
+                                    学习日志
+                                    <div class="ui teal left pointing label">13</div>
+                                </a>
+                            </div>
+                            <div class="ui fluid vertical menu">
+                                <a href="#" class="item">
+                                    学习日志
+                                    <div class="ui teal left pointing label">13</div>
+                                </a>
+                            </div>
+                            <div class="ui fluid vertical menu">
+                                <a href="#" class="item">
+                                    学习日志
+                                    <div class="ui teal left pointing label">13</div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--标签-->
+                    <div class="ui segments m-margin-top-normal">
+                        <div class="ui secondary segment">
+                            <div class="ui two column grid">
+                                <div class="column">
+                                    <i class="icon tags"></i>标签
+                                </div>
+                                <div class="column right aligned">
+                                    <a href="#">more <i class="icon angle right double"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ui teal secondary segment">
+                            <div class="ui teal left pointing label m-margin-normal">
+                                标签<div class="detail">52</div>
+                            </div>
+                            <div class="ui teal left pointing label m-margin-normal">
+                                标签<div class="detail">52</div>
+                            </div>
+                            <div class="ui teal left pointing label m-margin-normal">
+                                标签<div class="detail">52</div>
+                            </div>
+                            <div class="ui teal left pointing label m-margin-normal">
+                                标签<div class="detail">52</div>
+                            </div>
+                            <div class="ui teal left pointing label m-margin-normal">
+                                标签<div class="detail">52</div>
+                            </div>
+                            <div class="ui teal left pointing label m-margin-normal">
+                                标签<div class="detail">52</div>
+                            </div>
+                            <div class="ui teal left pointing label m-margin-normal">
+                                标签<div class="detail">52</div>
+                            </div>
+                            <div class="ui teal left pointing label m-margin-normal">
+                                标签<div class="detail">52</div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!--最新推荐-->
+                    <div class="ui segments m-margin-top-normal">
+                        <div class="ui secondary segment">
+                            <i class="icon bookmark"></i>最新推荐
+                        </div>
+                        <div class="ui teal secondary segment">
+                            <a href="#">最新故事 (佚名)</a>
+                        </div>
+                    </div>
+
+
+                    <!--二维码-->
+                    <h4 class="ui horizontal divider header">扫码关注我</h4>
+                    <div class="ui centered card" style="width: 11em">
+                        <img src="./static/images/wechat.jpg" class="ui rounded image" alt="">
+                    </div>
                 </div>
             </div>
         </div>
@@ -468,7 +560,7 @@
         <!--center aligned 字体居中-->
         <div class="ui center aligned container">
             <!--divided 线条分割线，应该是配合column使用就变成了竖线-->
-            <div class="ui inverted divided grid">
+            <div class="ui inverted divided grid stackable">
                 <div class="three wide column">
                     <div class="ui inverted link list" >
                         <div class="item">
@@ -505,4 +597,9 @@
         </div>
     </footer>
 </body>
+<script>
+    $("#mobile-nav-button").click(function () {
+        $(".mobile-item").toggleClass("m-mobile-hide");
+    });
+</script>
 </html>

@@ -30,6 +30,20 @@
     padding-right: 2em !important;
 }
 
+.m-margin-normal {
+    margin: 0.2em 0.2em !important;
+}
+
+.m-margin-top-normal {
+    margin-top: 1.7em !important;
+}
+
+.m-right-top {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
 
 /*----------text---------*/
 
@@ -46,19 +60,35 @@
 }
 
 .m-opacity-mini {
-    opacity: 0.8;
+    opacity: 0.8 !important;
 }
 
 .m-text-content {
-    font-family: 楷体;
-    font-weight: inherit;
+    font-family: 楷体 !important;
+    font-weight: inherit !important;
 }
 
 /*-----------display----------*/
 .m-display-block {
-    display: block;
+    display: block !important;
 }
 
 .m-display-inline {
-    display: inline;
+    display: inline !important;
+}
+
+.m-mobile-show {
+    display: none !important;
+}
+
+/*mobile*/
+/*当屏幕宽度小于768的时候生效*/
+@media screen and (max-width: 768px) {
+    .m-mobile-hide {
+        display: none !important;
+    }
+
+    .m-mobile-show {
+        display: block !important;
+    }
 }
