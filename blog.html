@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="./static/cs/me.css">
+    <link rel="stylesheet" type="text/css" href="./static/cs/typo.css">
+    <!--<link rel="stylesheet" type="text/css" href="static/cs/semantic.css">-->
+    <!--<link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.css">
+    <!--<script src="semantic/dist/semantic.min.js"></script>-->
+    <script src="./static/js/semantic.min.js"></script>
+    <script src="./static/js/jquery.min.js"></script>
+    <title>博客</title>
+</head>
+<body>
+<!--导航-->
+<!--inverted 反转颜色-->
+<nav class="ui inverted attached segment m-padded-tb-mini">
+    <!--container容器，会自动根据屏幕打到最好的效果-->
+    <div class="ui container">
+        <!--stackable 可堆叠的，比如说导航栏，这里可以适应手机端-->
+        <div class="ui inverted secondary menu stackable">
+            <h2 class="ui teal header item">Blog</h2>
+            <a href="#" class="item mobile-item m-mobile-hide"><i class="home icon"></i>首页</a>
+            <a href="#" class="item mobile-item m-mobile-hide"><i class="idea icon"></i>分类</a>
+            <a href="#" class="item mobile-item m-mobile-hide"><i class="tags icon"></i>标签</a>
+            <a href="#" class="item mobile-item m-mobile-hide"><i class="clone icon"></i>归档</a>
+            <a href="#" class="item mobile-item m-mobile-hide"><i class="info icon"></i>关于我</a>
+            <div class="right item mobile-item m-mobile-hide">
+                <!--transparent透明-->
+                <div class="ui inverted transparent icon input">
+                    <input type="text" placeholder="搜索...">
+                    <i class="search link icon"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="#" id="mobile-nav-button" class="ui menu toggle button black m-mobile-show m-right-top">
+        <i class="icon sidebar"></i>
+    </a>
+</nav>
+
+<!--中间内容-->
+<div class="m-padded-tb-max m-container-small">
+    <div class="ui container">
+        <!--头部-->
+        <div class="ui top attached segment">
+            <div class="ui horizontal link list">
+                <div class="item">
+                    <!--avatar ui image圆弧图片-->
+                    <img class="avatar ui image"
+                         src="https://timgsa.baidu.com/timg?image&quality=80&size=b99_100&sec=1591898304917&di=e5813532921dc44d2a1cb13a0e7ccb07&imgtype=0&src=http%3A%2F%2Fa3.att.hudong.com%2F35%2F34%2F19300001295750130986345801104.jpg"
+                         alt="">
+                    <div class="content"><a href="#" class="header">佚名</a></div>
+                </div>
+                <div class="item">
+                    <i class="icon ui calendar"></i> 2020-06-11
+                </div>
+                <div class="item">
+                    <i class="ui icon eye"></i> 20212
+                </div>
+            </div>
+        </div>
+        <!--图片区域-->
+        <div class="ui attached segment">
+            <img class="ui image rounded centered aligned"
+                 src="https://timgsa.baidu.com/timg?image&quality=80&size=b99000_100000&sec=1591898304917&di=e5813532921dc44d2a1cb13a0e7ccb07&imgtype=0&src=http%3A%2F%2Fa3.att.hudong.com%2F35%2F34%2F19300001295750130986345801104.jpg"
+                 alt="">
+        </div>
+
+        <!--博客内容-->
+        <div class="ui attached segment">
+            <div class="ui right aligned basic segment">
+                <div class="ui orange label">原创</div>
+            </div>
+            <!--博客内容-->
+            <div class="m-margin-lr typo typo-selection">
+                <h2 class="ui center aligned header">程序员接私活完整攻略</h2>
+                <p><strong>接私活</strong>
+                    对程序员这个圈子来说是一个既公开又隐私的话题，不说全部，应该大多数程序员都有过想要接私活的想法，当然，也有部分得道成仙的不主张接私活。但是很少有
+                    人在公开场合讨论私活的问题，似乎都在避嫌。就跟有人下班后跑滴滴一样，程序员私有时间接点活挣点钱不也很正常么，不过不要在上班时间就行，就跟你上班期
+                    间出去跑滴滴一样。</p>
+                <p>当你竭尽全力想要去接私活的时候一定做过这样的事，百度搜索“程序员如何接私活”或者“程序员到哪接外包”之类的问题，那么相信你也一定看到过让你不要接私活的帖子，观点大概就是：</p>
+                <p><strong>把有限的时间花在提升自己的能力上，技术深度，技术广度，或者多阅读书籍，丰富自己，这样有可能比做外包收益大。</strong></p>
+                <p>这里就不跟大家讨论该不该接的问题了，很明显，我接了。首先跟大家分享几个项目案例。</p>
+                <p><strong>案例1</strong></p>
+                <p>大概是13年14年左右的样子，谈到一个项目，做一个APP连接甩脂机，通过蓝牙模块传输数据，便于手机上观察，大概这样。依稀记得跟甲方项目经理
+                    沟通需求时，他拿了一个 Android 2.x
+                    系统的手机给我演示了QQ的一些功能，我一本正经的跟他说，“你放心，这个肯定做不了”，他当时就懵了…因为我并不想兼容2.x版本的系统。后来进入签合
+                    同阶段，这家公司不大，事儿倒是不少，又是身份证复印件，又是按指纹。这个项目是我外包生涯中的一次滑铁卢，为什么呢，因为我竟然同意了不用付定金，等项
+                    目开发中期再支付第一笔费用。带着一个他们提供的蓝牙硬件模块，回去了。后端开始编写API，Android iOS
+                    开始研究蓝牙数据传输，噼里啪啦直接把项目做完了。测试包发过去了，结果大家能想到，不给钱!</p>
+                <p>我至今都记得这家公司的名字，不知道倒闭了没有，我们整个团队一分钱没得到，项目以失败告终。</p>
+                <p><strong>案例2</strong></p>
+                <p>一个汽车后市场项目。当时市场上有一款APP，养车点点，后来已经改名，叫典典养车，我们当时要做的就是抄袭它，功能类似，整个项目差不多十几万。
+                    甲方是做汽车零配件的，在上海有很多家店，每次交流的地址在一家咖啡馆。两个多月后，项目上线，经营一段时间后，甲方意欲挖我们过去，毕竟项目是我们做
+                    的，他想把原班人马招过去，婉拒。</p>
+                <p><strong>案例3</strong></p>
+                <p>一个海外社交项目。这个项目比较小，只做 Android 一个端，原因是甲方招聘的 Android
+                    人员离职了，时间紧急，就让我接了。比较顺利，对方提供视觉稿、API，我开发 Android
+                    即可，项目也没啥难度，我闲着无聊，特地给他们做了一些交互动画，甲方验收的时候非常高兴，直言比他们自己员工做得都好。</p>
+                <p>
+                    还有很多其它项目就不一一介绍了，小到做一个控件，几百块，千把块，大到几十万的项目，从整理需求到设计到开发。当然，也不是什么项目都接，举个例子，以APP为例，在甲方提供API和视觉稿的前提下，一个端低于2万的项目从来不接。</p>
+                <p>
+                    做私活挣钱吗？不挣钱是脑子进水了吗。尤其对于刚入场的选手，外包收入可以说抵你一年的工资都可以。不仅挣钱，还特别积累经验，外包项目五花八门，搞地图的，搞语音的，搞视频的，搞蓝牙的，能帮助初级选手快速成长。</p>
+                <p>做私活累吗？相当累。白天黑夜，从无周末。项目一旦接下来，从此进入心事重重的生活，不到最后交付那一刻，不会停缓。周末是最佳的工作时间，平时下班晚的话还做不了，所以几乎没有休息时间。</p>
+                <p>
+                    <img src="%E7%A8%8B%E5%BA%8F%E5%91%98%E6%8E%A5%E7%A7%81%E6%B4%BB%E5%AE%8C%E6%95%B4%E6%94%BB%E7%95%A5_skypan_running%E7%9A%84%E5%8D%9A%E5%AE%A2-CSDN%E5%8D%9A%E5%AE%A2_%E7%A8%8B%E5%BA%8F%E5%91%98%E6%8E%A5%E7%A7%81%E6%B4%BB_files/5117775-fc83ee80fabb850e.htm"
+                         alt=""></p>
+                <p><strong>重点来了，到哪里接呢？</strong></p>
+                <p>
+                    初级选手自己乱七八糟找项目，高级选手项目找上门。做私活一定要找到最佳状态，不然就是受罪。什么是最佳状态，就是当项目找上门时，**想做就做，不想做又想赚就转。**那么到底有哪些方法可以接到私活呢？不管黑猫白猫，抓到老鼠就是好猫，有哪些方法我一一说来。</p>
+                <p><strong>方法1</strong></p>
+                <p>各个众包平台。这是入门级的手段，也是最容易做的方法。有哪些众包平台就不用我一一细说了吧，猪八戒，威客网，CSDN
+                    也有外包频道，一些技术论坛，海外的 Freelance
+                    网站等等，每个都注册一遍，前期比较麻烦，各种资料需要填写，团队介绍，历史案例。注册之后理论上就可以投标项目了，不过如果需要认证的话，还需要继续花
+                    钱，很多项目只有花钱之后才有机会投标，这个就自己评估吧，我没花钱。通常没啥好项目，钱哪有那么容易赚，都是些边边角角稀奇古怪的项目。当然，即便是被
+                    别人挑剩下来的项目，也不排除有好项目，你要一一去沟通才知道。</p>
+                <p><strong>方法2</strong></p>
+                <p>主动联系各个外包公司，成为他们的备选开发人员。外包公司接单子的手段肯定比我们个人高明多了，他们就靠这个吃饭的，当他们出现人员紧缺、项目过
+                    剩、员工离职等情况时，不排除他们会考虑找临时替补人员，甚至把项目整包转出去。如果你身边有朋友开外包公司的，那很好，先天优势，长期互助。但是大部分
+                    人也许并没有这样的资源，那么这就是个体力活了，在方法1的基础上，部分平台会留下甲方的联系方式，比如猪八戒，你直接搜索软件外包服务商，他们的介绍页
+                    面上通常会有他们的手机号码和邮箱等信息，或者当你点击“在线咨询”“与我联系”等类似按钮的时候，他们的自动回复也会出现一些QQ号、手机号、邮箱等联
+                    系信息。</p>
+                <p>
+                    <img src="%E7%A8%8B%E5%BA%8F%E5%91%98%E6%8E%A5%E7%A7%81%E6%B4%BB%E5%AE%8C%E6%95%B4%E6%94%BB%E7%95%A5_skypan_running%E7%9A%84%E5%8D%9A%E5%AE%A2-CSDN%E5%8D%9A%E5%AE%A2_%E7%A8%8B%E5%BA%8F%E5%91%98%E6%8E%A5%E7%A7%81%E6%B4%BB_files/5117775-eb3dee49c294a148.htm"
+                         alt=""></p>
+                <p>
+                    <img src="%E7%A8%8B%E5%BA%8F%E5%91%98%E6%8E%A5%E7%A7%81%E6%B4%BB%E5%AE%8C%E6%95%B4%E6%94%BB%E7%95%A5_skypan_running%E7%9A%84%E5%8D%9A%E5%AE%A2-CSDN%E5%8D%9A%E5%AE%A2_%E7%A8%8B%E5%BA%8F%E5%91%98%E6%8E%A5%E7%A7%81%E6%B4%BB_files/5117775-56d82d850c73eb3b.htm"
+                         alt=""></p>
+                <p>
+                    <img src="%E7%A8%8B%E5%BA%8F%E5%91%98%E6%8E%A5%E7%A7%81%E6%B4%BB%E5%AE%8C%E6%95%B4%E6%94%BB%E7%95%A5_skypan_running%E7%9A%84%E5%8D%9A%E5%AE%A2-CSDN%E5%8D%9A%E5%AE%A2_%E7%A8%8B%E5%BA%8F%E5%91%98%E6%8E%A5%E7%A7%81%E6%B4%BB_files/5117775-1ba8d48728a9f1ad.htm"
+                         alt=""></p>
+                <p>这边我只是以其中一个平台为例，只要你用心，各个平台你都能扒到一些有用的信息。拿到这些信息之后你就可以把你编辑好的话术发给他们，也可以直接加
+                    他们微信，通常手机号码就是微信，不要怂，直接跟他们联系，打电话、发邮件、发QQ，发微信，把你想要做外包的意图告诉他们即可，然后就静静的躺在他们的
+                    朋友圈里，或者被遗忘，一两个月问一次好打个招呼，不要太频繁，这也算是人际关系的维护，看你本领了，多认识点人没坏处，剩下的就是平淡的等待了，如果他
+                    们会联系你的话。</p>
+                <p><strong>方法3</strong></p>
+                <p>
+                    跟身边的开发人员灰度交流。你没有项目，不代表别人都没有，如果别人愿意带着你的话，这也算是一个渠道。什么是灰度交流，就是半含蓄状态，文章开始我说了，程序员接私活是一个既公开又隐私的话题，不过这个度大家自己把握好，搞不好丢饭碗，把握不好的还是放弃这个方法吧。</p>
+                <p><strong>方法4</strong></p>
+                <p>人脉资源。除了从网络上接项目，或者吃外包公司的残羹冷炙，还有另外一个类别的项目，那就是创业者。在这个互联网、移动互联网、物联网盛行的时代，
+                    创业者也是一波接着一波，虽然热度有高有低，但是从不缺。组建一个公司，组建一个技术团队需要一笔不菲的费用，尤其软件开发人员的工资，将成为一个创业公
+                    司的沉重负担。种子投资，或者天使轮投资能有多少，对大多数创业项目来说，几十万，一百万，两百万，或者五百万，基本顶天了，这些钱能维持一个团队多久，
+                    何况还有很多创业者并没有拿到融资，他们等着先开发一个上线项目，再拿项目去找投资。如果你能接到这样的项目，那也是很爽的，不过通常这类项目靠熟人介
+                    绍，但是你千万要注意，一定要营造良好的口碑。有条件的话，也可以做套名片，几十块钱，够发好久的。</p>
+                <p>
+                    <img src="%E7%A8%8B%E5%BA%8F%E5%91%98%E6%8E%A5%E7%A7%81%E6%B4%BB%E5%AE%8C%E6%95%B4%E6%94%BB%E7%95%A5_skypan_running%E7%9A%84%E5%8D%9A%E5%AE%A2-CSDN%E5%8D%9A%E5%AE%A2_%E7%A8%8B%E5%BA%8F%E5%91%98%E6%8E%A5%E7%A7%81%E6%B4%BB_files/5117775-715689e8c201a33a.htm"
+                         alt=""></p>
+                <p>做私活没有稳定的渠道，你可能一直找不到项目，也可能一年一个项目，重点是心态，不然你将陷入困扰的情绪当中。有更好，没有拉倒，找到最舒服的状态。</p>
+                <p><strong>当项目来临时，该如何报价？</strong></p>
+                <p>价值都是相对的，一定要有自己的心理预期，有些人觉得五千很值，有些人觉得一万很值。不要饥不择食，不管多廉价都接；也不要人心不足，吃着碗里看着
+                    锅里，或者觊觎别人的高价。跟对方交谈时，一定要快速判断彼此是否是目标客户，不要啰嗦太多，你的心理预期是几万，对方的心理预算是几千，这样的项目还谈
+                    个啥，务必在最短的时间内确定大家是否可以继续谈下去，否则浪费不必要的时间。如果大家心理预期差不多，对方不是那种想三千块钱做个淘宝的，则继续往下进
+                    行。有的甲方要求不多，很爽快，这样最好，有的甲方需要出报价单，那么就详细沟通需求，整理报价，整理报价是一个费时的过程，不要嫌麻烦，我们不是服务
+                    商，我们是抢食的个体，一定要不怕付出，哪怕一无所获。</p>
+                <p>
+                    <img src="%E7%A8%8B%E5%BA%8F%E5%91%98%E6%8E%A5%E7%A7%81%E6%B4%BB%E5%AE%8C%E6%95%B4%E6%94%BB%E7%95%A5_skypan_running%E7%9A%84%E5%8D%9A%E5%AE%A2-CSDN%E5%8D%9A%E5%AE%A2_%E7%A8%8B%E5%BA%8F%E5%91%98%E6%8E%A5%E7%A7%81%E6%B4%BB_files/5117775-017f56d2285ba6be.htm"
+                         alt=""></p>
+                <p>
+                    <img src="%E7%A8%8B%E5%BA%8F%E5%91%98%E6%8E%A5%E7%A7%81%E6%B4%BB%E5%AE%8C%E6%95%B4%E6%94%BB%E7%95%A5_skypan_running%E7%9A%84%E5%8D%9A%E5%AE%A2-CSDN%E5%8D%9A%E5%AE%A2_%E7%A8%8B%E5%BA%8F%E5%91%98%E6%8E%A5%E7%A7%81%E6%B4%BB_files/5117775-de7fcfb5d2d24f8f.htm"
+                         alt=""></p>
+                <p>甲方有可能只是来询价，也可能等你出完报价单再回去比价，还是那句话，不要怕吃亏。如果甲方是个体的话，通常很好弄，但是甲方是商家的话就麻烦一
+                    点，一定要问清楚是否要开票，开票是要税的，不过羊毛出在羊身上，告诉他我们的报价是不含税的，如果要开票的话要加上税钱，20万的话，差不多几千块钱，
+                    看对方要求开什么类型的票。开票的话可以自己去税务局开，不过我没去过，如果自己认识几个开公司的朋友的话那是最好，让他们帮忙开张票，把税钱贴给他们。</p>
+                <p>如果你觉的开票你对来说很难实施的话，那么有三个方案，一是放弃，这样的单子直接不要接了，继续寻找下一个单子；二是先接下来再转包，转给其它的外
+                    包公司做，不过你要估摸好有公司接，有朋友做外包公司那是最好的，相互帮忙，但是这种方案并不推荐，原因是不好把控项目进度和质量，还担风险；三是把项目
+                    介绍给认识的公司去谈，谈好了你拿提成，这样你既不担风险，还赚点快钱。</p>
+                <p><strong>付款方式该如何确定呢？</strong></p>
+                <p>切记，必须付定金，越多越好。通常我的付款方式是442，即预付40%的定金，项目提测再付40%，项目上线付清余款20%，这套方式针对个人比较
+                    好用，针对公司不好用，公司通常会留一笔费用在上线后一个月两个月三个月再付清，所以付款方式可以改成5311，即预付50%的定金，提测30%，上线
+                    10%，上线运营一个月后10%，坚持一个原则，前期付的钱越多越好。</p>
+                <p><strong>接下来就是签合同了</strong></p>
+                <p>一般只有个人才可能不要求签合同，大多数情况还是要签合同的。合同尽量你来拟定，不会写的话上网抄，一定要保护好自己的权益，重点是防止被对方坑。
+                    比如在合同中一定要写好适配哪些系统哪些浏览器，基于哪个版本开发等等，做得到的就写，做不到的别乱写，合同这东西，在心情好的时候怎么写都无所谓，心情
+                    不好的时候大家只能拿合同说话，你可别赔个十万二十万的，吓死你。</p>
+                <p>整个接私活的过程差不多就是这样了，最后，我再强调几点<strong>注意事项</strong>：</p>
+                <ul>
+                    <li>
+                        <p>没有金刚钻，别揽瓷器活。</p>
+                    </li>
+                    <li>
+                        <p>急单勿接。</p>
+                    </li>
+                    <li>
+                        <p>任何不付定金的单子都是耍流氓。</p>
+                    </li>
+                    <li>
+                        <p>不计得失，不怕吃亏。</p>
+                    </li>
+                    <li>
+                        <p>保证质量，塑造口碑。</p>
+                    </li>
+                </ul>
+                <p>end</p>
+
+                <div class="ui left pointing teal label">方法论</div>
+                <!--circular大圆角-->
+                <div class="ui center aligned basic segment">
+                    <button id="payButton" class="ui button orange basic circular">打赏</button>
+                </div>
+                <div class="ui payWinn m-show-hide centered aligned">
+                    <div class="ui orange bordered label m-margin-lr-auto">
+                        <div class="ui label">
+                            <div class="ui images" style="font-size: inherit !important;">
+                                <div class="image">
+                                    <img src="./static/images/wechat.jpg" class="ui rounded bordered image" alt=""
+                                         style="width: 150px !important;">
+                                    <div>微信</div>
+                                </div>
+                                <div class="image">
+                                    <img src="./static/images/wechat.jpg" class="ui rounded bordered image" alt=""
+                                         style="width: 150px !important;">
+                                    <div>支付宝</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <!--博客信息-->
+    <!--message-->
+    <div class="ui attached positive message">
+        博客信息
+    </div>
+    <!--留言区域-->
+    <div class="ui bottom attached segment">
+        留言区域
+    </div>
+</div>
+</div>
+
+<!--底部footer-->
+<footer class="ui inverted vertical segment m-padded-tb-max">
+    <!--center aligned 字体居中-->
+    <div class="ui center aligned container">
+        <!--divided 线条分割线，应该是配合column使用就变成了竖线-->
+        <div class="ui inverted divided grid stackable">
+            <div class="three wide column">
+                <div class="ui inverted link list">
+                    <div class="item">
+                        <img src="./static/images/wechat.jpg" style="width: 100px;" class="ui rounded image"
+                             alt="扫码关注我的公众号">
+                    </div>
+                </div>
+            </div>
+            <div class="three wide column">
+                <h4 class="ui inverted header">最新博客</h4>
+                <div class="ui inverted link list m-opacity-mini m-text-thin">
+                    <a href="#" class="item">用户故事1(User Story)</a>
+                    <a href="#" class="item">用户故事2(User Story)</a>
+                    <a href="#" class="item">用户故事3(User Story)</a>
+                </div>
+            </div>
+            <div class="three wide column">
+                <h4 class="ui inverted header">联系方式</h4>
+                <div class="ui inverted link list m-opacity-mini m-text-thin">
+                    <a href="#" class="item">手机：188888888</a>
+                    <a href="#" class="item">微信：dias-sda</a>
+                    <a href="#" class="item">邮箱：faddas@163.com</a>
+                </div>
+            </div>
+            <div class="seven wide column">
+                <h4 class="ui inverted header">博客网站介绍</h4>
+                <div class="ui inverted link list">
+                    <p class="m-opacity-mini m-text-thin">欢迎大家来到我开发的博客，大家可以自由发帖，讨论。禁止注水。</p>
+                </div>
+            </div>
+        </div>
+        <!--section 空行？ divider 分割线-->
+        <div class="ui inverted section divider"></div>
+        <p class="m-opacity-mini m-text-thin">Free & Open Source (™CodeMan)</p>
+    </div>
+</footer>
+</body>
+<script>
+    $("#mobile-nav-button").click(function () {
+        $(".mobile-item").toggleClass("m-mobile-hide");
+    });
+
+    $('#payButton').click(function () {
+        $('.payWinn').toggleClass("m-show-hide");
+    })
+</script>
+</html>
